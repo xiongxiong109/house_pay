@@ -3,9 +3,7 @@ html
 	head
 		title= title
 		link(rel='stylesheet', href='/css/style.css')
-		script(type="text/javascript").
-			// 利用后端技术将数组打在页面中
-			#{lilv_array}
+		include lilv.jade
 	body
 		block content
 		script(type="text/javascript" src="/js/jquery/jquery.min.js")

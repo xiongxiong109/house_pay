@@ -32,63 +32,13 @@ block content
 										.h1	请您填写:
 										.mainltr01
 											.mainltr01tr.cnradio
-												//- 后端生成贷款类别
-												贷款类别：
-												-for(var i = 0; i< loanradiotype.length; i++)
-													if(i == 0)
-														label
-															input(type="radio" name="loanradiotype" value="#{i+1}" style="margin-left: 10px;" onclick="exc_zuhe(this.form, this.value);" class="noborder" checked="checked")
-															| #{loanradiotype[i]}
-														input#type(value="#{i+1}" name="type" type="hidden")
-													else
-														label
-															input(type="radio" name="loanradiotype" value="#{i+1}" style="margin-left: 10px;" onclick="exc_zuhe(this.form, this.value);" class="noborder")
-															| #{loanradiotype[i]}
-										ul#calc11_zuhe.calculator(style="display: none;")
-											li
-												| &nbsp;&nbsp;商业性：
-												input#zuhesy.guestbook01(name="total_sy" maxlength="8" size="8" type="text")
-												| 元
-											li
-												| &nbsp;&nbsp;公积金：
-												input#zuhegjj.guestbook01(name="total_gjj" maxlength="8" size="8" type="text")
-												| 元
-										.mainltr01#calc1_ctype
-											.h2	计算方式
-											ul
-												li
-													input(id="calc1_radio1" onclick="exc_js(this.form,1);" type="radio" checked="checked" value="1" name="jisuan_radio")
-													| 根据面积、单价计算
-													span#calc1_js_div1(style="display: block")
-														li 
-															| &nbsp;&nbsp;&nbsp;&nbsp;单价：
-															input.guestbook01(name="price" type="text")
-															| 元/平米
-														li 
-															| &nbsp;&nbsp;&nbsp;&nbsp;面积：
-															input.guestbook01(name="sqm" type="text")
-															| 平方米
-														li 
-															| &nbsp;&nbsp;&nbsp;&nbsp;按揭成数：
-															select(size="1" name="anjie" style="color:#f00;")
-																-for (var i = 9; i >= 2; i--)
-																	if (i == 7)
-																		option(value="#{i}" selected="true") #{i}成
-																	else
-																		option(value="#{i}") #{i}成
-										.mainltr01
-											| 按揭年数
-											select#years(size="1" name="years" style="color:#f00;" onchange="ShowLilvNew(this.value,document.calc1.lilv.value);")
-												-for (var i = 1; i <= 20; i++)
-													if (i == 20)
-														option(value="#{i}" selected="true") #{i}年(#{i * 12})期
-													else
-														option(valut="#{i}") #{i}年(#{i * 12})期
-										.mainltr01
-											.mainltr01tr
-												贷款利率：
-												select#lilv(name="lilv" style="color:#f00;" onchange="ShowLilvNew(document.calc1.years.value,this.value)")
-													// -for (var i = 0; i < lilvArray.length; i++)
-														//- option(value="#{i}")
+												| 贷款类别：
+												input(type="radio" name="loanradiotype" value="1" class="noborder" onclick="exc_zuhe(this.form, this.value);" checked="checked")
+												| 商业贷款
+												input(type="radio" name="loanradiotype" value="2" class="noborder" onclick="exc_zuhe(this.form, this.value);" checked="checked")
+												| 公积金贷款
+												input(type="radio" name="loanradiotype" value="3" class="noborder" onclick="exc_zuhe(this.form, this.value);" checked="checked")
+												| 组合型贷款
+
 
 

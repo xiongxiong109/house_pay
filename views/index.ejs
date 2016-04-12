@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title><%= title%></title>
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<% include lilv.ejs %>
+</head>
+<body>
+	<div class="leftbk0225">
+	  <div class="leftbk0225a" style="position: relative;">
+	  	<div class="fdjsqsjb">
+	  		<a href="#" target="_blank"></a>
+	  	</div>
+	  	<h1>购房贷款计算器</h1>
+	  	<!--计算器分类 begin-->
+	  	<div class="jsqtitle">
+	  		<ul>
+	  			<li class="jsqt03_hover">
+	  				<a href="#">贷款计算器</a>
+	  			</li>
+	  			<li class="jsqt01">
+	  				<a href="#">公积金贷款计算器</a>
+	  			</li>
+	  			<li class="jsqt02">
+	  				<a href="#">提前还贷计算器</a>
+	  			</li>
+	  			<li class="jsqt03">
+	  				<a href="#">税费计算器</a>
+	  			</li>
+	  			<li class="jsqt02">
+	  				<a href="http://newhouse.fang.com/house/zxdk.htm">装修贷款计算器</a>
+	  			</li>
+	  			<li class="jsqt02" style="margin-right: 0;">
+	  				<a href="#">购房能力评估计算器</a>
+	  			</li>
+	  		</ul>
+	  	</div>
+	  	<!--计算器分类 end-->
+	  	<!--计算一 begin-->
+	  	<div id="calculate01" class="main">
+	  		<form id="calc11" name="calc11">
+	  			<table width="650" border="0" cellpadding="0" cellspacing="0" style="font-size:12px!important;">
+	  				<tbody>
+	  					<tr>
+	  						<td width="330" valign="top">
+	  							<div class="mainl">
+	  								<div class="h1">请您填写：</div>
+  									<div class="mainltr01">
+		  								<div class="mainltr01tr cnradio">
+		  									贷款类别：
+		  									<label>
+		  										<input type="radio" name="loanradiotype" value="1" class="noborder" onclick="exc_zuhe(this.form, this.value);" checked="checked">
+		  										商业贷款
+		  									</label>
+		  									<label>
+		  										<input type="radio" name="loanradiotype" value="2" style="margin-left: 10px;" onclick="    exc_zuhe(this.form, this.value);" class="noborder">
+		  										公积金贷款
+		  									</label>
+		  									<label>
+		  										<input type="radio" name="loanradiotype" value="3" onclick="    exc_zuhe(this.form, this.value);" class="noborder" style="margin-left: 10px;">
+		  										组合型贷款
+		  									</label>
+		  									<input type="hidden" name="type" value="1" id="type">
+		  								</div>
+		  								<ul id="calc11_zuhe" style="display: none" class="calculator">
+		  									<li>
+		  										&nbsp;&nbsp;商业性：
+		  										<input id="zuhesy" name="total_sy" maxlength="8" size="8" type="text" class="guestbook01">元
+		  									</li>
+												<li>&nbsp;&nbsp;公积金：
+													<input id="zuhegjj" name="total_gjj" maxlength="8" size="8" type="text" class="guestbook01">元
+												</li>
+											</ul>
+										</div>
+										<div id="calc11_ctype" class="calculator" style="padding: 5px 	0 10px 20px">
+											<div class="h2">计算方式：</div>
+											<ul>
+											<li style="line-height: 30px; padding-left: 20px;" class="	cnradio">
+											<input name="jisuan_radio" type="radio" class="noborder" id="calc11_radio1" onclick="exc_js(this.form, 1);" value="1" checked="true">
+											根据面积、单价计算
+											</li>
+											<span id="calc1_js_div1" style="display: block">
+											<li style="line-height: 30px; padding-left: 20px;">&nbsp;&nbsp;&nbsp;&nbsp;单价：<input id="price" name="price" type="text" class="guestbook01">元/平米</li>
+											<li style="line-height: 30px; padding-left: 20px;">&nbsp;&nbsp;&nbsp;&nbsp;面积：<input id="sqm" name="sqm" type="text" class="guestbook01">平方米</li>
+											<li style="line-height: 30px; padding-left: 20px;">&nbsp;&nbsp;&nbsp;&nbsp;按揭成数：
+												<select size="1" id="anjie" style="color: #f00;">
+													<% for (var i = 9; i >= 2; i--) { %>
+														<option value="<%= i %>"
+															<% if (i == 7) { %>
+															selected="true"
+															<% } %>
+														><%= i %>成</option>
+													<% } %>
+												</select>
+											</li>
+											</span>
+											<li style="line-height: 30px; padding-left: 20px;" class="	cnradio">
+											<input name="jisuan_radio" type="radio" class="noborder" id="calc11_radio2" onclick="exc_js(this.form, 2);" value="2">
+											根据贷款总额计算</li>
+											<li id="calc1_js_div2" style="display: none">
+											&nbsp;&nbsp;&nbsp;&nbsp;贷款总额：
+											<input maxlength="8" size="10" name="daikuan_total000" id="daikuan" class="guestbook01">元
+											</li>
+											</ul>
+										</div>
+										<div class="mainltr01">
+											按揭年数：
+											<select id="years" size="1" name="years" style="color: #f00;" onchange="ShowLilvNew(this.form,this.value,document.calc11.lilv.value)">
+											<% for (var i = 1; i <= 30; i++ ) { %>
+												<option value="<%= i %>"
+													<% if (i == 20) { %>
+														selected ="true"
+													<% } %>
+												><%= i %>年(<%= i*12 %>期)</option>
+											<% } %>
+											</select>
+										</div>
+										<div class="mainltr01">
+											<div class="mainltr01tr">
+											贷款利率：
+											<select id="lilv" name="lilv" style="color: #f00;" onchange="ShowLilvNew(this.form,document.calc11.years.value,this.value)">
+												<!-- 数组这里的从1开始存储了 -->
+												<% for (var i = 1; i <= lilv.length; i++) { %>
+													<option value="<%= i %>"
+														<% if (i == 11) { %>
+															selected="true"
+														<% } %>
+													><%= lilv[i - 1] %></option>
+												<% } %>
+											</select>
+											</div>
+											<ul>
+											<li id="singlelv_li" style="display: block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="singlelv" type="text" class="red guestbook01" value="4.90">%
+											</li>
+											<li id="sdlv_li" style="display: none">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;商&nbsp;&nbsp;&nbsp;  业： 
+												<input id="sdlv" type="text" class="red guestbook01" value="4.90">%
+											</li>
+											<li id="gjlv_li" style="display: none">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;公 积 金：
+												<input id="gjlv" type="text" class="red guestbook01" value="3.25">%
+											</li>
+											</ul>
+										</div>
+										<div class="mainltr01 cnradio">还款方式：
+											<input id="dengeben1" type="radio" name="radioben" value="1" checked="" onclick="ext_loanbenjin(this.form, this.value)">
+											等额本息
+											<input id="dengeben2" type="radio" name="radioben" value="2" onclick="ext_loanbenjin(this.form, this.value)">
+											等额本金
+										</div>
+										<div class="mainltr02">
+											<a href="javascript:ext_loantotal(document.calc11)">
+												<img src="/img/jsq_title11.gif" alt="计算购房贷款">
+											</a>&nbsp;&nbsp;&nbsp;&nbsp;
+											<a href="javascript:loanreset(document.calc11);">
+												<img src="/img/jsq_title12.gif" alt="重新填写贷款条件">
+											</a>
+										</div>
+									</div>
+								</td>
+								<td width="35" valign="middle">
+									<img src="/img/jsq_title09a.gif" alt="" width="35" height="27">
+								</td>
+								<td width="285" valign="top">
+									<div class="mainr">
+									<div class="h1">查看结果：</div>
+									<div class="mainrtr01">
+									<ul>
+										<li>&nbsp;&nbsp;房款总额：
+											<input id="fangkuan_total1" name="fangkuan_total1" type="text" class="guestbook02" readonly="true">元
+										</li>
+										<li>&nbsp;&nbsp;贷款总额：
+											<input name="daikuan_total1" type="text" class="guestbook02" readonly="true">元
+										</li>
+										<li>&nbsp;&nbsp;还款总额：
+											<input name="all_total1" type="text" class="guestbook02" readonly="true">元
+										</li>
+										<li style="padding-left: 0px;">支付利息款：
+											<input name="accrual1" type="text" class="guestbook02" readonly="true">元
+										</li>
+										<li>&nbsp;&nbsp;首期付款：
+											<input name="money_first1" type="text" class="guestbook02" readonly="true">元
+										</li>
+										<li>&nbsp;&nbsp;贷款月数：
+											<input name="month1" type="text" class="guestbook02" readonly="true">
+										</li>
+										<li id="benxi">&nbsp;&nbsp;月均还款：
+											<input name="month_money1" type="text" class="guestbook02" readonly="true">元
+										</li>
+										<li id="benjin" style="display: none;">&nbsp;&nbsp;月均金额：
+											<textarea class="inputwidthnew" name="month_money3" rows="3" cols="16"></textarea>元
+										</li>
+									</ul>
+									<div id="calc1_benjin" style="display: none;">
+										<input type="hidden" name="fangkuan_total2">
+										<input type="hidden" name="daikuan_total2">
+										<input type="hidden" name="all_total2">
+										<input type="hidden" name="accrual2">
+										<input type="hidden" name="money_first2">
+										<input type="hidden" name="month2">
+										<input type="hidden" name="month_money2">
+									</div>
+									<div class="mainrtr01tr" style="text-align: right; padding-right: 50px;">*以上结果仅供参考 </div>
+									</div>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</form>
+			</div>
+			<!--计算 end-->
+		</div>
+	</div>
+	<script type="text/javascript" src="/js/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="/js/calculator.js"></script>
+</body>
+</html>

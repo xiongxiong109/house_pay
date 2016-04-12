@@ -1,0 +1,118 @@
+<script type="text/javascript">
+	lilv_array = new Array;
+
+	//2016年1月1日利率上限（1.1倍）
+	lilv_array[1] = new Array;
+	lilv_array[1][1] = new Array;
+	lilv_array[1][2] = new Array;
+	lilv_array[1][1][1] = 0.04785;//商贷1年 4.785%
+	lilv_array[1][1][3] = 0.05225;//商贷1～3年 5.225%
+	lilv_array[1][1][5] = 0.05225;//商贷 3～5年 5.225%
+	lilv_array[1][1][10] = 0.0539;//商贷 5-30年 5.39%
+	lilv_array[1][2][5] = 0.0275;//公积金 1～5年 2.75%
+	lilv_array[1][2][10] = 0.0325;//公积金 5-30年 3.25%
+
+	//2016年1月1日利率下限（85折）
+	lilv_array[2] = new Array;
+	lilv_array[2][1] = new Array;
+	lilv_array[2][2] = new Array;
+	lilv_array[2][1][1] = 0.03698;//商贷1年 3.698%
+	lilv_array[2][1][3] = 0.04038;//商贷1～3年 4.038%
+	lilv_array[2][1][5] = 0.04038;//商贷 3～5年 4.038%
+	lilv_array[2][1][10] = 0.04165;//商贷 5-30年 4.165%
+	lilv_array[2][2][5] = 0.0275;//公积金 1～5年 2.75%
+	lilv_array[2][2][10] = 0.0325;//公积金 5-30年 3.25%
+
+	//2016年1月1日利率下限（7折）
+	lilv_array[3] = new Array;
+	lilv_array[3][1] = new Array;
+	lilv_array[3][2] = new Array;
+	lilv_array[3][1][1] = 0.03045;//商贷1年 3.045%
+	lilv_array[3][1][3] = 0.03325;//商贷1～3年 3.325%
+	lilv_array[3][1][5] = 0.03325;//商贷 3～5年 3.325%
+	lilv_array[3][1][10] = 0.0343;//商贷 5-30年 3.43%
+	lilv_array[3][2][5] = 0.0275;//公积金 1～5年 2.75%
+	lilv_array[3][2][10] = 0.0325;//公积金 5-30年 3.25%
+
+	//2016年1月1日基准利率
+	lilv_array[4] = new Array;
+	lilv_array[4][1] = new Array;
+	lilv_array[4][2] = new Array;
+	lilv_array[4][1][1] = 0.0435;//商贷1年 4.35%
+	lilv_array[4][1][3] = 0.0475;//商贷1～3年 4.75%
+	lilv_array[4][1][5] = 0.0475;//商贷 3～5年 4.75%
+	lilv_array[4][1][10] = 0.049;//商贷 5-30年 4.90%
+	lilv_array[4][2][5] = 0.0275;//公积金 1～5年 2.75%
+	lilv_array[4][2][10] = 0.0325;//公积金 5-30年 3.25%
+
+	//15年10月24日利率上限（1.1倍）
+	lilv_array[5] = new Array;
+	lilv_array[5][1] = new Array;
+	lilv_array[5][2] = new Array;
+	lilv_array[5][1][1] = 0.04785;
+	lilv_array[5][1][3] = 0.05225;
+	lilv_array[5][1][5] = 0.05225;
+	lilv_array[5][1][10] = 0.0539;
+	lilv_array[5][2][5] = 0.03025;
+	lilv_array[5][2][10] = 0.03575;
+	//15年10月24日利率下限（95折）
+	lilv_array[6] = new Array;
+	lilv_array[6][1] = new Array;
+	lilv_array[6][2] = new Array;
+	lilv_array[6][1][1] = 0.041325;
+	lilv_array[6][1][3] = 0.045125;
+	lilv_array[6][1][5] = 0.045125;
+	lilv_array[6][1][10] = 0.04655;
+	lilv_array[6][2][5] = 0.026125;
+	lilv_array[6][2][10] = 0.030875;
+	//15年10月24日利率下限（9折）
+	lilv_array[7] = new Array;
+	lilv_array[7][1] = new Array;
+	lilv_array[7][2] = new Array;
+	lilv_array[7][1][1] = 0.03915;
+	lilv_array[7][1][3] = 0.04275;
+	lilv_array[7][1][5] = 0.04275;
+	lilv_array[7][1][10] = 0.0441;
+	lilv_array[7][2][5] = 0.02475;
+	lilv_array[7][2][10] = 0.02925;
+	//15年10月24日利率下限（88折）
+	lilv_array[8] = new Array;
+	lilv_array[8][1] = new Array;
+	lilv_array[8][2] = new Array;
+	lilv_array[8][1][1] = 0.03828;
+	lilv_array[8][1][3] = 0.0418;
+	lilv_array[8][1][5] = 0.0418;
+	lilv_array[8][1][10] = 0.04312;
+	lilv_array[8][2][5] = 0.0242;
+	lilv_array[8][2][10] = 0.0286;
+	//15年10月24日利率下限（85折）
+	lilv_array[9] = new Array;
+	lilv_array[9][1] = new Array;
+	lilv_array[9][2] = new Array;
+	lilv_array[9][1][1] = 0.036975;
+	lilv_array[9][1][3] = 0.040375;
+	lilv_array[9][1][5] = 0.040375;
+	lilv_array[9][1][10] = 0.04165;
+	lilv_array[9][2][5] = 0.023375;
+	lilv_array[9][2][10] = 0.027625;
+	//15年10月24日利率下限（7折）
+	lilv_array[10] = new Array;
+	lilv_array[10][1] = new Array;
+	lilv_array[10][2] = new Array;
+	lilv_array[10][1][1] = 0.03045;
+	lilv_array[10][1][3] = 0.03325;
+	lilv_array[10][1][5] = 0.03325;
+	lilv_array[10][1][10] = 0.0343;
+	lilv_array[10][2][5] = 0.01925;
+	lilv_array[10][2][10] = 0.02275;
+	//15年10月24日基准利率
+	lilv_array[11] = new Array;
+	lilv_array[11][1] = new Array;
+	lilv_array[11][2] = new Array;
+	lilv_array[11][1][1] = 0.0435;
+	lilv_array[11][1][3] = 0.0475;
+	lilv_array[11][1][5] = 0.0475;
+	lilv_array[11][1][10] = 0.049;
+	lilv_array[11][2][5] = 0.0275;
+	lilv_array[11][2][10] = 0.0325;
+</script>

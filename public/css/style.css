@@ -1,0 +1,238 @@
+div,form,img,ul,ol,li,dl,dt,dd,p{margin:0;padding:0px;border:0;}
+.sfunfooter20120411{width:960px;background:#fff;color:#333;font-size:12px;font-family:'宋体';text-align:center;clear:both;margin:0 auto;}
+.sfunfooter20120411 a:link{font-size:12px;color:#333;text-decoration:none;}
+.sfunfooter20120411 a:visited{font-size:12px;color:#333;text-decoration:none;}
+.sfunfooter20120411 a:hover{font-size:12px;color:#c00;text-decoration:underline;}
+.sfunfooter20120411 .song{line-height:20px;}
+.sfunfooter20120411 .verdana{line-height:20px;font-family:Verdana;}
+.sfunfooter20120411 .verdana a{color:#333;font-family:'宋体';padding:2px 7px;text-decoration:none;}
+.sfunfooter20120411 .verdana a:hover{color:#c00;text-decoration:underline;}
+.sfunfooter20120411 em{font-style:normal;font-family:Verdana;}
+.sfunfooter20120411 .spacing{line-height:23px;letter-spacing:3px;font-family:Verdana;margin-top:5px;}
+.sfunfooter20120411 td a{display:block;}
+.sfunfooter20120411 td a:hover{color:#c00;text-decoration:none;}
+.footershaixa{position:relative;z-index:2;}
+.footershaixa a{color:#333;text-decoration:none;}
+.footershaixb{display:none;width:500px;height:175px;position:absolute;left:-230px;top:16px;cursor:auto;background:#fff;border:1px solid #c00;text-align:left;}
+.footershaixa.activexiala div{display:block;padding:5px 10px;}
+.footershaixa.activexiala div td{line-height:22px;}
+
+/* CSS Document wanghongcheng 2009.12.24 款贷计算器 */
+
+div,form,img,ul,ol,li,dl,dt,dd{margin:0;padding:0;border:0;}
+li{list-style-type:none;}
+h1,h2,h3,h4,h5,h6{margin:0;padding:0;font-size:12px;font-weight:normal;}
+a:link{color:#333;text-decoration:none;}
+a:visited{color:#333;text-decoration:none;}
+a:hover{color:#049;text-decoration:underline;}
+a:active{color:#333;}
+.noneBox{display:none;}
+.blank8{height:8px;overflow:hidden;clear:both;}
+.blank10{height:10px;overflow:hidden;clear:both;}
+.middle *{vertical-align:middle;}
+.clear{overflow:hidden;clear:both;font-size:0;}
+.box{width:1000px;margin:0 auto;}
+.allpic img{vertical-align:top;}
+
+/*顶部核心一行导航*/
+.dingbuhexin_top{width:960px;height:29px;line-height:29px;margin:5px auto;border-bottom:1px solid #ccc;}
+.dingbuhexin_top span{float:right;color:#333;letter-spacing:2px;}
+
+/*沿用详情页 广告*/
+.photo02{width:960px;padding:0 8px;font-size:0;}
+.photo_99{float:left;width:170px;}
+.photo_98{float:left;width:590px;padding-left:6px;}
+.photo_97{float:left;width:170px;padding-left:6px;}
+.banner_top01{width:960px;height:auto;text-align:center;}
+
+/*导航*/
+.biaozhunxfnav090616{width:960px;height:36px;}
+.biaozhunxfnavlogo090616{float:left;width:119px;height:36px;}
+.biaozhunxfnavright090616{float:right;width:837px;height:34px;line-height:34px;background:url(../img/biaozhundaonav_bj.gif) repeat-x;border:1px solid #D4E4ED;padding-left:2px;}
+.xfnavdh2zi090616{float:left;width:47px;height:27px;line-height:27px;text-align:center;font-size:12px;color:#313131;font-weight:bold; margin-top:4px;}
+.xfnavdh2zi090616 a:hover{float:left;width:47px;height:27px;line-height:27px;text-align:center;font-size:12px;color:#E70705;font-weight:bold;background:url(../img/biaozhundaonav_dh01.gif) no-repeat; text-decoration:none;}
+.xfnavdh4zi090616{float:left;width:67px;height:27px;line-height:27px;text-align:center;font-size:12px;color:#313131;font-weight:bold;margin-top:4px;}
+.xfnavdh4zi090616 a:hover{float:left;width:67px;height:27px;line-height:27px;text-align:center;font-size:12px;color:#E70705;font-weight:bold;background:url(../img/biaozhundaonav_dh02.gif) no-repeat; text-decoration:none;}
+.xfnavdhline090616{float:left;width:2px;height:27px;line-height:27px; background:url(../img/biaozhundaonav_line.gif) no-repeat;margin-top:4px;}
+
+.content{width:1000px;}
+.leftbk{float:left;width:680px;border:1px solid #d3e4ec;background:url(../img/jsq_title01.gif) repeat-x;margin-top:8px;padding:8px 15px; padding-bottom:15px;}
+.leftbktitle{width:680px;height:56px;text-align:center;margin-bottom:10px;}
+.maintitle{width:680px;}
+.maintitletdline{float:left;width:1px;height:34px; font-size:0px;}
+.maintitletd{float:left;width:97px;height:34px;line-height:34px;text-align:center;background:url(../img/jsq_title05a.gif) no-repeat;font-weight:bold;}
+.maintitletd1{float:left;width:97px;height:34px;line-height:34px;text-align:center;background:url(../img/jsq_title05.gif) no-repeat;font-weight:bold;}
+.maintitletda{float:left;width:142px;height:34px;line-height:34px;text-align:center;background:url(../img/jsq_title06a.gif) no-repeat;font-weight:bold;}
+.maintitletda1{float:left;width:142px;height:34px;line-height:34px;text-align:center;background:url(../img/jsq_title06.gif) no-repeat;font-weight:bold;}
+.maintitletdb{float:left;width:198px;height:34px;line-height:34px;text-align:center;background:url(../img/jsq_title07a.gif) no-repeat;font-weight:bold;}
+.maintitletdb1{float:left;width:198px;height:34px;line-height:34px;text-align:center;background:url(../img/jsq_title07.gif) no-repeat;font-weight:bold;}
+.main{width:650px;border:1px solid #69911f;border-top:0px;background:url(../img/jsq_title08a.gif) repeat-x;padding:20px 14px 10px 14px;}
+.mainbottom{width:650px;border:1px solid #69911f;border-top:0px;padding:10px 14px; background:#f5faf0;}
+.mainbottom li {line-height:25px; }
+.mainbottom li.big{line-height:25px; font-size:14px;}
+.mainbottom li.red{line-height:25px; color:#f00;}
+.mainl{width:100%;}
+
+.mainl .h1{height:25px;line-height:25px;padding-left:20px;padding-bottom:5px;font-weight:bold;color:#f00;}
+.mainl .h2{height:25px;line-height:25px;padding-bottom:5px;}
+.mainltr01{line-height:30px;padding-left:20px;background:url(../img/jsq_title10.gif) bottom repeat-x; padding-bottom:10px; padding-top:5px;}
+.mainltr02{line-height:26px;margin-top:10px; text-align:center;}
+.mainltr01tr{line-height:30px;}
+.mainltr01 li{line-height:30px;padding-left:20px;}
+.mainltr01 li.zt{line-height:30px;color:#9c9c9c;}
+
+.mainr{width:100%; padding-left:5px;}
+.mainr .h1{height:25px;line-height:25px;padding-left:20px;padding-bottom:5px;font-weight:bold;color:#f00;}
+.mainrtr01{line-height:30px;padding-left:10px;padding-bottom:10px; padding-top:5px;}
+.mainrtr01tr{line-height:30px;}
+.mainrtr01 li{line-height:30px;padding-left:5px;}
+
+.mainrtr02{line-height:30px;padding-left:10px;background:url(../img/jsq_title10.gif) bottom repeat-x; padding-bottom:10px;  padding-top:5px;}
+.mainrtr02 li{line-height:30px;padding-left:5px;}
+.mainltr03{line-height:26px;margin-top:10px; text-align:center;}
+
+.rightbk{float:right;width:280px;margin-top:8px;}
+.rightbkqy{width:258px;background:#fff; padding:8px 10px;}
+
+.rightbkqy li{line-height:25px; padding-left:10px;}
+.rightbkqy h1{line-height:25px; padding-left:10px;}
+.rightbkqy table{line-height:25px; border-top:1px solid #eaeaea;border-left:1px solid #eaeaea;}
+.rightbkqy table td{padding-left:5px; border-bottom:1px solid #eaeaea; border-right:1px solid #eaeaea;}
+
+/*首页标准尾部*/
+.biaozhunfooter{clear:both;margin:auto;width:960px;height:65px;padding-top:10px;border-top:1px solid #ccc;margin-top:5px;}
+.biaozhunfooter ul li{line-height:1.5em;text-align:center;}
+.biaozhunfooter_0{float:left;padding-left:300px;}
+.biaozhunfooter_a{width:350px;height:25px;line-height:25px;}
+.biaozhunfooter_a span{font-family:Verdana, Arial, Helvetica, sans-serif;}
+.biaozhunfooter_b{width:330px;height:25px;line-height:25px;text-align:center;}
+.biaozhunfooter_img{float:right;width:40px;height:auto;margin-right:220px!important;margin-right:110px;}
+
+/*字体*/
+.font01,.font01 a:link,.font01 a:visited,.font01 a:active{font-size:12px;color:#fff;text-decoration:none;}
+.font01 a:hover{font-size:12px;color:#fff;text-decoration: underline}
+.font02,.font02 a:link,.font02 a:visited,.font02 a:active{font-size:12px;color:#cc3333;text-decoration:none;}
+.font02 a:hover{font-size:12px;color:#cc3333;text-decoration: underline}
+.font03,.font03 a:link,.font03 a:visited,.font03 a:active{font-size:12px;color:#9c9c9c;text-decoration:none;}
+.font03 a:hover{font-size:12px;color:#9c9c9c;text-decoration: underline}
+.font04,.font04 a:link,.font04 a:visited,.font04 a:active{font-size:12px;color:#035ab3;text-decoration:none;}
+.font04 a:hover{font-size:12px;color:#035ab3;text-decoration:underline}
+.font05,.font05 a:link,.font05 a:visited,.font05 a:active{font-size:12px;color:#f00;text-decoration:none;}
+.font05 a:hover{font-size:12px;color:#f00;text-decoration: underline}
+
+.guestbook01 {border: #7f9db9 1px solid;font: 12px arial, verdana, sans-serif; color:#000;text-align: left;text-decoration: none;width:75px;height:17px;}
+.guestbook02 {border: #7f9db9 1px solid;font: 12px arial, verdana, sans-serif; color:#000;text-align: left;text-decoration: none;width:120px;height:17px;}
+.guestbook03 {border: #7f9db9 1px solid;font: 12px arial, verdana, sans-serif; color:#000;text-align: left;text-decoration: none;width:55px;height:17px;}
+
+/*购房能力评估楼盘项目列表*/
+.ll{text-align:left;}
+.cc{text-align:center;}
+.rr{text-align:right;}
+.w60{width:60px;}
+.w110{width:110px;}
+.calculateHeadTd{font-weight:bold;background-color:#fff;color:#000;font-size:12px;height:30px;}
+.calculateTitleTd{background-color:#fff;color:#000;font-size:12px;height:35px;}
+.calculateTd{background-color:#fff;color:#000;font-size:12px;height:15px;padding:0 5px 0 5px;}
+.calculateTd a{color:#0b6abe;text-decoration:none;}
+.calculateTd a:hover{color:#0b6abe;text-decoration:underline}
+
+.registers20090623{width:940px;height:28px;padding:0 10px;background:#f0f0f0;margin:0 auto;font:12px "宋体";margin-bottom:10px;}
+.registers20090623city{float:right;width:576px;line-height:28px;}
+.registers20090623cityzi,.registers20090623cityzi a{color:#666;}
+.registers20090623deng{float:left;width:330px;line-height:30px;}
+.leftbk0225{float:left;width:712px;}
+.leftbk0225a{width:680px;border:1px solid #d3e1be;margin-top:8px;padding:8px 15px; padding-bottom:15px;}
+.leftbk0225logo{width:712px;height:42px;}
+.leftbk0225logol{float:left;height:42px;}
+.leftbk0225logor{float:left;height:30px;line-height:30px; margin-top:12px;padding-left:20px;font-family:"微软雅黑";font-size:24px;color:#049;}
+.leftbk0225logora{float:left;height:30px;line-height:30px; margin-top:12px;padding-left:20px;font-family:"微软雅黑";font-size:24px;color:#049; font-weight:bold;}
+.leftbk0225a h1{width:330px;height:56px; line-height:56px;text-align:center;margin-bottom:10px; padding:0px 180px; background:url(../img/jsq_title02a.gif) no-repeat center;font-family:"微软雅黑";font-size:24px;color:#007f00;}/*20120417*/
+.rightbkqytitleb{width:208px;height:25px;line-height:25px;padding-left:10px;}
+
+/*导航*/
+.biaozhunxfnav{width:960px;height:36px;}
+.biaozhunxfnavlogo{float:left;width:119px;height:36px;}
+.biaozhunxfnavright{float:right;width:837px;height:34px;line-height:34px;background:url(http://img.soufun.com/house/default/images/biaozhundaonav_bj.gif) repeat-x;border:1px solid #D4E4ED;padding-left:2px;}
+.xfnavdh2zi{float:left;width:47px;height:27px;line-height:27px;text-align:center;font-size:12px;color:#313131;font-weight:bold; margin-top:4px;}
+.xfnavdh2zi a:hover{float:left;width:47px;height:27px;line-height:27px;text-align:center;font-size:12px;color:#E70705;font-weight:bold;background:url(http://img.soufun.com/house/default/images/biaozhundaonav_dh01.gif) no-repeat; text-decoration:none;}
+.xfnavdh4zi{float:left;width:67px;height:27px;line-height:27px;text-align:center;font-size:12px;color:#313131;font-weight:bold;margin-top:4px;}
+.xfnavdh4zi a:hover{float:left;width:67px;height:27px;line-height:27px;text-align:center;font-size:12px;color:#E70705;font-weight:bold;background:url(http://img.soufun.com/house/default/images/biaozhundaonav_dh02.gif) no-repeat; text-decoration:none;}
+.xfnavdhline{float:left;width:2px;height:27px;line-height:27px; background:url(http://img.soufun.com/house/default/images/biaozhundaonav_line.gif) no-repeat;margin-top:4px;}
+
+/* 20120413 */
+.new_list{margin-top:8px;overflow:hidden;}
+.mainltr01 strong { color:#f00; }
+.fl { float:left; display:inline; }
+.fr { float:right; display:inline;}
+.basicinform_title, .newtitle_left, .newtitle_center, .newtitle_right, .righttitlebox .s1, .righttitlebox .s2, .morethan_btn {background:url(http://img1.soufun.com/house/calculate/images/newicon_btns_2.gif);}
+.basicinform_title{clear:both;overflow:hidden;height:30px;line-height:30px;background-position:0 -245px;background-repeat:repeat-x;}
+.lefttitlebox{float:left;overflow:hidden;height:24px;margin-left:5px;margin-top:6px;}
+.newtitle_left{float:left;overflow:hidden;width:17px;background-position:0 -165px;background-repeat:no-repeat;height:24px;}
+.newtitle_center{float:left;overflow:hidden;padding:0 5px;font-size:12px;font-weight:bold;background-position:0 -205px;background-repeat:repeat-x;height:24px;line-height:24px;}
+.newtitle_right{float:left;overflow:hidden;width:18px;background-position:-50px -165px;background-repeat:no-repeat;height:24px;}
+.pricetrend_rit{float:right;margin-right:5px;}
+.fb_blue{color:#004499;}
+.fb_blue a:link, .fb_blue a:visited{color:#004499;text-decoration:none}
+.fb_blue a:hover,.fb_blue a:active{color:#004499;text-decoration:underline}
+a.fb_blue:link,a.fb_blue:visited{color:#004499;text-decoration:none}
+a.fb_blue:hover,a.fb_blue:active{color:#004499;text-decoration:underline}
+.new_list_box { width:350px; border:1px solid #acd2e9; padding-bottom:10px; overflow:hidden; zoom:1; }
+.ditimg li { background:url(http://img1.soufun.com/house/subject/images/diarybj.gif) no-repeat 1px -44px;}/* 列表黑点 */
+.new_list_ul{width:248px;}
+.new_list_ul ul{width:325px;margin:10px 0 0 7px;}
+.new_list_ul ul li{width:325px;height:22px;line-height:22px;padding:0 10px;overflow:hidden;}
+.new_list_ul ul li .fl { width:250px; height:22px; line-height:22px; overflow:hidden; }
+.new_list_ul ul li .fr { width:65px; height:22px; line-height:22px; color:#999; overflow:hidden; }
+.red{color:#f00;}
+.fdjsqsjb{position:absolute;cursor:pointer;width:84px;height:32px;background:url(../img/fdjsqsjb.jpg) no-repeat;top:20px;right:20px;}
+.fdjsqsjb a{display:block;width:84px;height:32px;}
+/************************************************** 贷款产品 **************************************************/
+.rightbkqy1{width:258px;background:#fff;padding:8px 10px;}
+.dkcp{width:258px;margin-top:4px;overflow:hidden;}
+.dkcp li{padding:5px 0;*padding:3px 0;border-bottom:#e0e0e0 1px dashed;overflow:hidden;}
+@media screen and (-webkit-min-device-pixel-ratio:0){.dkcp li{padding: 2px 0;}}
+@-moz-document url-prefix(){ .dkcp li{padding:4px 0;}}
+.dkcp01{display:inline;float:left;width:30px;height:30px;margin:5px 10px 0 0;overflow:hidden;}
+.dkcp02{display:inline;float:left;width:90px;margin-right:10px;overflow:hidden;}
+.dkcp02 h3{height:22px;line-height:22px;font-size:14px;font-weight:bold;color:#049;}
+.dkcp02 p{height:18px;line-height:18px;}
+.dkcp03{float:right;width:78px;line-height:20px;text-align:right;overflow:hidden;}
+.dkcp03grey{color:#999;}
+.dkcptit{ height:25px;line-height:25px;font-size:18px; font-family:"微软雅黑";}
+/************************************************** 计算器标题 **************************************************/
+.jsqtitle{width:680px;overflow:hidden;}
+.jsqtitle ul li{display:inline-block;float:left;line-height:34px;margin-right:2px;text-align:center;overflow:hidden;}
+.jsqt01,.jsqt01_hover,.jsqt02,.jsqt02_hover,.jsqt03,.jsqt03_hover{height:34px;background-image:url("../img/jsqtitlebg.gif");background-repeat:no-repeat;overflow:hidden;}
+.jsqt01{width:138px;background-position:0 0;}
+.jsqt01_hover{width:138px;background-position:0 -35px;}
+.jsqt02{width:120px;background-position:0  -70px;}
+.jsqt02_hover{width:120px;background-position:0 -105px;}
+.jsqt03{width:86px;background-position:0  -140px;}
+.jsqt03_hover{width:86px;background-position:0 -175px;}
+.jsqt01 a,.jsqt01 a:visited,.jsqt02 a,.jsqt02 a:visited,.jsqt03 a,.jsqt03 a:visited{color:#fff;}
+.jsqt01 a:hover,.jsqt02 a:hover,.jsqt03 a:hover{color:#fff;}
+.jsqt01_hover a,.jsqt01_hover a:visited,.jsqt02_hover a,.jsqt02_hover a:visited,.jsqt03_hover a,.jsqt03_hover a:visited{color:#333;}
+.jsqt01_hover a:hover,.jsqt02_hover a:hover,.jsqt03_hover a:hover{color:#333;}
+
+/*新添加开始.........................*/
+.dkcptit,.rightbkqy h2,.rightbkqytitlea{ border-bottom:1px #e2e2e2 solid;padding:0 0 6px;height:auto; line-height:26px; padding:0; font-size:14px;}
+.leftbk0225 .in_fl h2{ font-size:14px; line-height:16px; height:16px;}
+.leftbk0225 .in_fl h2 span{ font-size:12px;}
+.leftbk0225{ font-size:12px;}
+.leftbk0225 .dk_l li{ font-size:12px;}
+.rightbk{ font-size:12px;}
+.rightbk h2{ font-size:14px;}
+.rightbk .dkcp02 h3{ font-size:12px;}
+.leftbk0225 .home_dk{ height:auto;}
+
+.rightbk .jsq_ks{ width:100%; padding-bottom:10px; border:1px #AFD08F solid;}
+.rightbk .jsq_ks h2{ height:20px; line-height:20px;}
+.rightbk .jsq_ks dl{ margin-top:10px;}
+.rightbk .jsq_ks dl .ctbtns{ padding:0;}
+.rightbk .jsq_ks .wydkgjc li{ height:20px; line-height:20px; float:left; margin-left:10px; padding-left:8px; width:120px;}
+.rightbk .jsq_ks .ksdk{ padding:0 14px 6px;}
+.rightbk .wydkgjc li{background: url("http://img.soufun.com/news/image/newscenter/20100811/images/listimg.gif") no-repeat scroll 0 -192px rgba(0, 0, 0, 0);}
+.rightbkqy ul{ padding-top:8px; }
+/*新添加结束.........................*/
+/* 20150909 */
+.cnradio input {vertical-align:-4px;}
